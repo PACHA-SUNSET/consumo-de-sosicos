@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="pacha-removebg-preview.png" sizes="1112x1112" type="image/png">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+  <title>pacha sunset</title>
+</head>
+  <head>
+      <title>Pacha Sunset</title>
+      <meta name="description" content="Descripción de tu sitio web sobre Dogamos Pacha Sunset.">
+  </head>
+
+<body>
+    <video autoplay muted loop id="bgVideo">
+      <source src="SnapSave.io-Neon Rounded Purple lines Abstract Gradient Background Animation __ Free Version.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  <img src="icons8-menu-96.png" id="icon" />
+  <div id="sidebar">
+    <ul>
+      <li>
+        <img src="icons8-check-64.png" alt="Opción 1" class="menu-icon">
+        <a href="#" id="finalizeButton">Finalizar</a>
+      </li>
+      <li>
+        <img src="icons8-shopping-cart-100.png" alt="Opción 2" class="menu-icon">
+        <a href="#" id="cartIcon">Carrito</a> <!-- Agregamos el ID aquí -->
+        <li>
+            <a href="https://wa.me/59163151497" target="_blank">
+                <img src="icons8-customer-support-100.png" alt="Opción 3" class="menu-icon">
+                Soporte Técnico
+            </a>
+        </li>
+
+            <li>
+              <br> <!-- Espacio adicional -->
+              <a href="#" id="clearCartButton">Borrar Carrito</a> <!-- Botón para borrar el carrito -->
+            </li>
+
+
+          </ul>
+        </div>
+
+
+
+  <!-- Modal para elegir nombre -->
+  <div class="modal" id="nameModal">
+    <p>Por favor, elige tu nombre:</p>
+    <select id="nameSelect">
+      <option value="">Seleccione su nombre Aqui</option>
+      <option value="Carin Tellez">Carin Tellez</option>
+      <option value="Diego Cardenas">Diego Cardenas</option>
+      <option value="Horacio Arenas">Horacio Arenas</option>
+      <option value="Leo Peter">Leo Peter</option>
+      <option value="Jeri Zabala">Jeri Zabala</option>
+      <option value="Rosario Zabala">Rosario Zabala</option>
+    </select>
+    <button id="chooseName">Confirmar</button>
+    <div class="check" id="checkMark" style="display: none;">✔</div>
+    <p id="nameMessage"></p>
+  </div>
+
+  <!-- Modal para escanear huella -->
+
+  <div class="modal" id="registerModal" style="display: none;">
+      <p>Por favor, ingrese su huella para continuar.</p>
+      <button id="register">
+          <img src="https://img.icons8.com/?size=100&id=69499&format=png&color=000000" alt="Escanear Huella" />
+          Presione aqui para escanear su huella 
+      </button>
+      <p id="message"></p>
+  </div>
+  <!-- Modal para mostrar el producto -->
+  <div class="modal" id="productModal" style="display: none;">
+    <p id="productMessage"></p>
+    <div id="quantityControls" style="display: none;">
+      <button id="decreaseQuantity">
+        <img src="minus.png" alt="Disminuir" />
+      </button>
+      <span id="quantity">0</span>
+      <button id="increaseQuantity">
+        <img src="plus.png" alt="Aumentar" />
+      </button>
+    </div>
+    <button id="addToCart">Confirmar Pedido</button> <!-- Botón para agregar al carrito -->
+    <button id="closeProductModal">Cancelar</button>
+  </div>
+
+
+
+
+  <div class="carousel" id="carousel1">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 20.01.31.jpeg" alt="" onclick="('menu1')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 20.01.32.jpeg" alt="" onclick="('menu2')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 21.57.19.jpeg" alt="" onclick="('menu3')">
+    <img class="bottle" src="descarga.jpg" alt="" onclick="('menu4')">
+    <img class="bottle" src="huari.png" alt="" onclick="('menu5')">
+    <img class="bottle" src="Thirst___.jpg" alt="" onclick="('menu6')">
+    <img class="bottle" src="havana.jpg" alt="" onclick="('menu7')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 21.56.11.jpeg" alt="" onclick="('menu8')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 21.48.40.jpeg" alt="" onclick="('menu9')">
+    <img class="bottle" src="gin.jpg" alt="" onclick="('menu10')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 21.03.58.jpeg" alt="" onclick="('menu11')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 21.03.58 (1).jpeg" alt="" onclick="('menu12')">
+  </div>
+  <div class="carousel" id="carousel2">
+    <img class="bottle" src="manzana.jpeg" alt="" onclick="('menu13')">
+    <img class="bottle" src="botanica.jpeg" alt="" onclick="('menu14')">
+    <img class="bottle" src="uva.jpeg" alt="" onclick="('menu15')">
+    <img class="bottle" src="lima limon.jpeg" alt="" onclick="('menu16')">
+    <img class="bottle" src="gigerel.jpeg" alt="" onclick="('menu17')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 23.04.41.jpeg" alt="" onclick="('menu18')">
+    <img class="bottle" src="rite.png" alt="" onclick="('menu19')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 23.09.46.jpeg" alt="" onclick="('menu20')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 22.43.00.jpeg" alt="" onclick="('menu21')">
+    <img class="bottle" src="WhatsApp Image 2024-10-01 at 22.19.23 (1).jpeg" alt="" onclick="('menu22')">
+    <img class="bottle" src="especial.jpg" alt="" onclick="('menu23')">
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
